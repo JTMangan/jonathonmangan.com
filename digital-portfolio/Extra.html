@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: #153243;
+            margin: auto;
+            padding-top: 2%;
+        }
+        a{
+            color: #FBFBFB;
+            margin: 6%;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .bottomNav{
+            padding-top:5%;
+            background-color: #ffffff;
+            margin:auto;
+        }
+        .bottomContain{
+            width: 15%;
+            padding-top:2%;
+        }
+        .bottomTab{
+            height: 200px;
+            margin:auto;
+        }
+        .container {
+            position: relative;
+            margin:auto;
+            width: 33%;
+            padding-top: 2%;
+            border:2px #000000;
+            margin-bottom: 3%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: transparent;
+            color: #FBFBFB;
+            font-size: 16px;
+        }
+    </style>
+    <body>
+        <div>
+            <a href = "/Users/jonathonmangan/digital-portfolio/index.html">Home</a>
+            <a href = "/Users/jonathonmangan/digital-portfolio/ExpInTech.html">Experiences in Tech</a>
+            <a href = "/Users/jonathonmangan/digital-portfolio/Extra.html">Extracurriculars</a>
+            <a href = "/Users/jonathonmangan/digital-portfolio/PassionPro.html">Passion Project</a>
+            <a href = "/Users/jonathonmangan/digital-portfolio/Resume.html">Resume</a>
+        </div>
+        <div class="container">
+            <img src="xcPaw.jpg" alt="Avatar" class="image" style="height:100%">
+            <div class="middle">
+              <div class="text">
+                    Within the high school I am a part of many teams and a couple of clubs, some of these include cross country, ultimate frisbee and Pizza club.  This is my third year involved in Cross Country to where I've accomplished receiving 2 varsity letters. Where as in ultimate frisbee and pizza club are newer clubs to where I have helped out with some of the leadership roles within or just being a member. 
+              </div>
+            </div>
+          </div>
+        <div class="bottomNav">
+            <img src="ultimate.jpg" class="bottomTab">
+            <img src="xc.jpg" class="bottomTab">
+        </div>
+    </body>
+</html>

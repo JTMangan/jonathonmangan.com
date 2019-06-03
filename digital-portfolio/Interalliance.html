@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: #153243;
+            margin: auto;
+            padding-top: 2%;
+        }
+        a{
+            color: #e2e2e2;
+            margin: 6%;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .bottomNav{
+            padding-top:5%;
+            background-color: #e2e2e2;
+            margin:auto;
+        }
+        .bottomContain{
+            width: 15%;
+            padding-top:2%;
+        }
+        .bottomTab{
+            height: 200px;
+            margin:auto;
+        }
+        .container {
+            position: relative;
+            margin:auto;
+            width: 33%;
+            padding-top: 2%;
+            border:2px #000000;
+            margin-bottom: 3%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: transparent;
+            color: #FBFBFB;
+            font-size: 16px;
+        }
+    </style>
+    <body>
+        <div>
+            <a href = "/Users/jonathonmangan/digital-portfolio/index.html">Home</a>
+            <a href = "/Users/jonathonmangan/digital-portfolio/ExpInTech.html">Experiences in Tech</a>
+            <a href = "/Users/jonathonmangan/digital-portfolio/Extra.html">Extracurriculars</a>
+            <a href = "/Users/jonathonmangan/digital-portfolio/PassionPro.html">Passion Project</a>
+            <a href = "/Users/jonathonmangan/digital-portfolio/Resume.html">Resume</a>
+        </div>
+        <div class="container">
+            <img src="interalliance.jpg" alt="Avatar" class="image" style="height:100%">
+            <div class="middle">
+              <div class="text">
+                    Within the INTERalliance I have worked on our school's projects, the swivel and parking pal, I am also apart of the INTERalliance leadership council where I set up for tech related events to spread IT within the Cincinnati high schools, also within our own school I will be Vice President of the INTERalliance of the 2018-2019 school year.
+              </div>
+              <div class="text">
+                    Through the INTERalliance Leadership Council I was able to secure an internship with Vora Ventures where I'll participate in their Zero to Sixty project. The Zero to Sixty project is 8-9 week startup project with 6-7 other high schoolers where you work on a product over the summer in the hopes of being to sell it. The biggest part that I want to get out of this is the ability to learn from other high schoolers and also be able to improve my ability on different aspects of myself whether it be the software or hardware part of computers.
+              </div>
+            </div>
+          </div>
+        <div class="bottomNav">
+            <a href="Robotics.html" >
+                <img src="BatteryFire.jpg" class="bottomTab">
+            </a>
+            <a href="Interalliance.html" >
+                <img src="IA-Logo_black.png" class="bottomTab">
+            </a>
+            <a href="PC.html" >
+                <img src="pc.jpeg" class="bottomTab">
+            </a>
+        </div>
+    </body>
+</html>

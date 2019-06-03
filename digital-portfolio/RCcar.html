@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: #153243;
+            margin: auto;
+            padding-top: 2%;
+        }
+        a{
+            color: #FBFBFB;
+            margin: 6%;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .bottomNav{
+            padding-top:5%;
+            background-color: #ffffff;
+            margin:auto;
+        }
+        .bottomContain{
+            width: 15%;
+            padding-top:2%;
+        }
+        .bottomTab{
+            height: 200px;
+            margin:auto;
+        }
+        .container {
+            position: relative;
+            margin:auto;
+            width: 33%;
+            padding-top: 2%;
+            border:2px #000000;
+            margin-bottom: 6%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: transparent;
+            color: #FBFBFB;
+            font-size: 16px;
+        }
+    </style>
+    <body>
+        <div>
+            <a href = "/Users/jonathonmangan/digital-portfolio/index.html">Home</a>
+            <a href = "/Users/jonathonmangan/digital-portfolio/ExpInTech.html">Experiences in Tech</a>
+            <a href = "/Users/jonathonmangan/digital-portfolio/Extra.html">Extracurriculars</a>
+            <a href = "/Users/jonathonmangan/digital-portfolio/PassionPro.html">Passion Project</a>
+            <a href = "/Users/jonathonmangan/digital-portfolio/Resume.html">Resume</a>
+        </div>
+        <div class="container">
+            <img src="RaspberryPi.jpg" alt="Avatar" class="image" style="height:100%">
+            <div class="middle">
+              <div class="text">
+                    For my project I am pursuing the raspberry pi. The pi is a small circuit board in which runs a linux based 
+                    operating system which can be used to run different tasks or to make new inventions whether is be a portable 
+                    camera or a heart rate monitor it can do a diverse set of objectives. In my case I am going to try to make RC cars 
+                    for a cheaper budget but a better car. What I'll be doing is using a raspberry pi to control motors so that they can 
+                    be moved based on a PS4 controllers commands over bluetooth.
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <img src="arduino.jpeg" alt="Avatar" class="image" style="height:100%">
+            <div class="middle">
+                <div class="text">
+                    For my project I am pursuing the raspberry pi. The pi is a small circuit board in which runs a linux based 
+                    operating system which can be used to run different tasks or to make new inventions whether is be a portable 
+                    camera or a heart rate monitor it can do a diverse set of objectives. In my case I am going to try to make RC cars 
+                    for a cheaper budget but a better car. What I'll be doing is using a raspberry pi to control motors so that they can 
+                    be moved based on a PS4 controllers commands over bluetooth.
+                </div>
+            </div>
+        </div>
+        <div class="container">
+                <img src="motor.jpeg" alt="Avatar" class="image" style="height:100%">
+                <div class="middle">
+                    <div class="text">
+                            The code above for the Arduino is some test code for how the Arduino makes the car move. It starts with the #include 
+                            statement which allows you to implement different databases into your code to use specific commands. Within mine I 
+                            specifically have the Adafruit_MotorShield which allows us to implement motors. This is shown when I make the AFMS 
+                            which is the motor shield. This motor shield allows you to initialize and run motors. This is first done by setting 
+                            the motors through the command Adafruit_DCMotor *motorR1 = AFMS.getMotor(1). This sets the name of the motor(motorR1), 
+                            and AFMS.getMotor() tells you which port of the shield by placing the number in the parentheses. Further down in the 
+                            code you set speed and the direction, setting speed is done with 
+                            
+                            "motorName->setSpeed(integer between 0 - 255)"
+                  
+                            From there to do direction you either right forward or backward, with forward keeping all the motors moving in a 
+                            positive direction then if backward to be in a negative direction causing the wheels to change.
+                    </div>
+                </div>
+            </div>
+        <div >
+        <div class="container">
+            <img src="ps4c.jpeg" alt="Avatar" class="image" style="height:100%">
+            <div class="middle">
+                <div class="text">
+                        Over the last month I've been trying to send info between a Raspberry pi and an Arduino. What I've learned about is 
+                        the serial port on the Arduino. This issue within the serial port is that it only excepts one piece of data at a time 
+                        so as the next step I'm gonna make a key within the data sent so that it, does different movements based on my key 
+                        whether it's forward, backward, left or right.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="bottomNav">
+                <a href="RCcar.html" >
+                    <img src="arduino.jpg" class="bottomTab">
+                </a>
+                <a href="Website.html" >
+                    <img src="TechScreenshot.png" class="bottomTab">
+                </a>
+            </div>
+    </body>
+</html>
