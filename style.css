@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+}
+
+.page-wrap{
+    margin:0;
+    width:90%;
+    max-width:1600px;
+}
+
+header[role="banner"] nav {
+    float: right;
+}
+
+footer[role="banner"] nav{
+    float:right;
+}
+
+
+#logo {
+    display: block;
+    text-indent: -9999em;
+    width: 68px;
+    height: 68px;
+    background:url("./images/logo-social.png");
+    background-size: 68px 68px;
+    float: left;
+    position: absolute;
+}
+
+#main-nav{
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+#main-nav ul{
+    display: block;
+    list-style: none;
+}
+
+#main-nav li{
+    float: left;
+    display: block;
+}
+
+#main-nav a{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 1em 2em;
+    margin-top: 2em;
+    display: block;
+    border-bottom: 3px solid transparent;
+}
+
+#footer-nav ul{
+    display: block;
+    list-style: none;
+}
+
+#footer-nav li{
+    float: center;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75em;
+}
+
+#footer-nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    margin-top: 2em;
+    display: block;
+}
+
+#github {
+    background:url("./images/githubLogo.png");
+
+}
+
+
+#home{
+    background: #000 url("./images/img_1410.jpeg") 50% 0 no-repeat fixed;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    padding: 12.5em 0;
+    color: #fff;
+    text-align: center;
+}
+
+#home h1 {
+    color:	#fff;
+    font-size: 3.75em;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+#home h2 {
+    color:	#fff;
+    font-size: 1.625em;
+    padding: 0 10%;
+}
+
